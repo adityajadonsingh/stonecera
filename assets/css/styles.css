@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", serif;
+}
+h2.heading{
+    font-size: 26px;
+    font-weight: 600;
+}
+.header .top-bar {
+  background-color: #615a52;
+  padding: 10px 0;
+}
+.header .top-bar .container {
+  display: flex;
+  justify-content: end;
+}
+.header .top-bar .social-icons {
+  display: flex;
+  column-gap: 10px;
+}
+.header .top-bar .social-icons .icn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #91805e;
+  border-radius: 100%;
+  transition: 0.1s linear;
+}
+.header .top-bar .social-icons .icn:hover {
+  background-color: #7B6E52;
+}
+.header .mid-bar {
+  padding: 10px 0;
+  background-color: #fbf8f4;
+}
+.header .mid-bar .logo img {
+  width: 123px;
+  height: auto;
+}
+.header .mid-bar .search-bar-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .mid-bar .search-bar-div .search {
+  width: 60%;
+  position: relative;
+}
+.header .mid-bar .search-bar-div .search input {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #615a52;
+  padding: 5px 30px 5px 15px;
+  outline: 0;
+}
+.header .mid-bar .search-bar-div .search i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .mid-bar .widgets {
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+.header .mid-bar .widgets img {
+  width: 30px;
+  height: 30px;
+}
+.header .support-items .icons{
+    position: relative;
+}
+
+.header .support-items .drop-items{
+    display: none;
+    position: absolute;
+    width: fit-content;
+    top: 100%;
+    right: 0;
+}
+.header .support-items .icons:hover .drop-items{
+   display: block;
+}
+.header .support-items .drop-items ul li{
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background-color: #615A52;
+    transition: 0.1s linear;
+}
+.header .support-items .drop-items ul li:hover{
+    background-color: #91805e;
+}
+.header .support-items .drop-items ul li a{
+    padding: 5px 25px;
+    display: inline-block;
+    font-weight: 600;
+}
+.header .support-items .drop-items ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+.header .mid-bar .widgets .icons img {
+  width: 35px;
+  height: 35px;
+}
+.header .mid-bar .widgets .icons .down {
+  margin-left: 5px;
+  width: 14px;
+  height: 14px;
+}
+.header .mid-bar .widgets .favourite img {
+  width: 40px;
+  height: 40px;
+}
+.header .mid-bar .widgets .cart img {
+  width: 35px;
+  height: 35px;
+}
+.header .btm-bar{
+    background-color: #efebe3;
+    padding: 10px 0;  
+}
+.header .btm-bar .navbar-nav {
+    text-transform: uppercase;
+    font-size: 15px;
+    column-gap: 35px;
+}
+.header .btm-bar .navbar-nav .nav-link{
+    padding: 0;
+}
+
+.home-banner .wrapper{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.home-banner .wrapper .banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-banner .content-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30%;
+    text-align: center;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
+}
+.home-banner .content-box h2{
+    font-size: 35px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.home-banner .banner-btn{
+    background-color: #91805E;
+  border: none;
+  border-radius: 100px;
+  padding: 5px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 499;
+}
+.home-banner .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+}
+.home-banner .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #91805E;
+}
+
+.stone-collection{
+    padding: 80px 0;
+}
+
+.stone-collection .card{
+    border: none;
+    overflow: hidden;
+    border-radius: 0;
+}
+.stone-collection .card .img-box{
+    position: relative;
+    height: 380px;
+    width: 100%;
+}
+.stone-collection .card .img-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5411298308385855) 30%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
+    z-index: 0;
+}
+.stone-collection .card .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stone-collection .card .img-box .card-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.stone-collection .card .view{
+    background-color: #615A52;
+    padding: 10px;
+    color: #fff;
+}
+.stone-collection .stone-slider-btn{
+    background-color: #D4CFC6;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  top: 56%;
+}
+.stone-collection .stone-slider-btn::after{
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+}
+.swiper-button-next.stone-slider-btn{
+    right: -32px;
+}
+.swiper-button-prev.stone-slider-btn{
+    left: -32px;
+}
