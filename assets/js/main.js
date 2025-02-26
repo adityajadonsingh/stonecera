@@ -1,3 +1,17 @@
+// Header Fixed 
+
+const header = document.querySelector(".header");
+
+if(header){
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 37) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+}
+
 // Home Banner Slider
 
 const homeBanner = new Swiper(".homeBanner", {
@@ -15,7 +29,7 @@ const homeBanner = new Swiper(".homeBanner", {
 
 const stoneCollections = new Swiper(".stoneCollections", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".stone-slider-btn.swiper-button-next",
         prevEl: ".stone-slider-btn.swiper-button-prev",
@@ -51,8 +65,8 @@ const blogsSection = new Swiper(".homeBlogs", {
         prevEl: ".blogs-slider-btn.swiper-button-prev",
     },
     pagination: {
-      el: ".blogs-section .blog-pagi",
-      clickable: true,
+        el: ".blogs-section .blog-pagi",
+        clickable: true,
     },
 });
 
@@ -66,7 +80,7 @@ const testimonial = new Swiper(".testimonial", {
         prevEl: ".testi-slider-btn.swiper-button-prev",
     },
     pagination: {
-      el: ".blogs-section .blog-pagi",
-      clickable: true,
+        el: ".blogs-section .blog-pagi",
+        clickable: true,
     },
 });
