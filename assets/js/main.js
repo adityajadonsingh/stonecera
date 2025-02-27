@@ -55,7 +55,7 @@ const stoneCollections = new Swiper(".stoneCollections", {
 // Popular Products Slider
 
 const popularProducts = new Swiper(".popularProducts", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: ".products-slider-btn.swiper-button-next",
@@ -71,9 +71,10 @@ const popularProducts = new Swiper(".popularProducts", {
         //   spaceBetween: 20,
         },
         788: {
-          slidesPerView: 3,
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        1040: {
+        1200: {
           slidesPerView: 4,
         },
       },
@@ -119,5 +120,22 @@ const testimonial = new Swiper(".testimonial", {
     pagination: {
         el: ".blogs-section .blog-pagi",
         clickable: true,
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      //   spaceBetween: 20,
+      },
+      767: {
+        slidesPerView: 1,
+      //   spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 2,
+      //   spaceBetween: 20,
+      },
+      1040: {
+        slidesPerView: 3,
+      },
     },
 });

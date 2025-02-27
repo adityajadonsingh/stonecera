@@ -335,11 +335,18 @@ h2.heading {
 .products-slider-btn,
 .blogs-slider-btn,
 .testimonials .testi-slider-btn {
-  background-color: #d4cfc6;
+  background-color: #d4cfc690;
   width: 30px;
   height: 30px;
   border-radius: 100%;
   top: 56%;
+}
+.stone-collection .stone-slider-btn:hover,
+.products-slider-btn:hover,
+.blogs-slider-btn:hover,
+.testimonials .testi-slider-btn:hover {
+  background-color: #d4cfc6;
+
 }
 .stone-collection .stone-slider-btn::after,
 .products-slider-btn::after,
@@ -452,7 +459,7 @@ h2.heading {
   margin: 25px 0;
 }
 .about-section .img-box {
-  height: 450px;
+  height: 100%;
   width: 100%;
 }
 .about-section .img-box img{
@@ -467,6 +474,9 @@ h2.heading {
   border-radius: 100px;
   background-color: transparent;
   padding: 10px 40px;
+}
+.about-section-btn:hover{
+  background-color: #615a52;
 }
 .newsletter {
   background-image: url("../images/newsletter-bg.png");
@@ -557,6 +567,9 @@ h2.heading {
   font-weight: 500;
 }
 .blogs-slider-btn {
+  background-color: #cbba9987;
+}
+.blogs-slider-btn:hover {
   background-color: #cbba99;
 }
 .blogs-section .blog-pagi {
@@ -606,6 +619,9 @@ h2.heading {
   font-weight: 500;
 }
 .testimonials .testi-slider-btn {
+  background-color: #91805e9c;
+}
+.testimonials .testi-slider-btn:hover {
   background-color: #91805e;
 }
 .footer {
@@ -708,7 +724,7 @@ h2.heading {
   bottom: 0;
   width: 100%;
   left: 0;
-  display: flex;
+  display: none;
   justify-content: space-between;
   z-index: 99;
   background-color: #fbf8f4;
