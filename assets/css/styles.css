@@ -28,6 +28,7 @@ ul {
   padding: 0;
 }
 body {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   font-family: "Poppins", serif;
@@ -37,10 +38,16 @@ h2.heading {
   font-weight: 600;
   color: #615a52;
 }
-.main-section{
+
+/* .main-section{
   margin-top: 164px;
-}
-.header.fixed-top.scrolled{
+} */
+/* .header{
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+} */
+.header.scrolled{
   top: -36px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -187,7 +194,10 @@ h2.heading {
 .header.scrolled{
   padding-top: 0px;
 }
-
+.header .mob-nav-btn{
+  display: none;
+  font-size: 25px;
+}
 .home-banner .wrapper {
   height: 60vh;
   width: 100%;
@@ -433,6 +443,7 @@ h2.heading {
   flex-direction: column;
   justify-content: center;
   color: #fff;
+  text-align: center;
 }
 .about-section .about-context h2 {
   font-size: 36px;
@@ -691,4 +702,45 @@ h2.heading {
 .footer .footer-newsletter .input-fields button {
   background-color: #615a52;
   color: #fff;
+}
+.mobile-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: #fbf8f4;
+}
+.mobile-footer .link{
+  width: 25%;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.mobile-footer .link span{
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+  color: #615a52;
+}
+.mobile-footer .link:not(:last-child)::before{
+  content: '';
+  width: 1px;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #bbbbbb94;
+}
+.mobile-footer .inner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mobile-footer .inner img{
+  width: 25px;
+  height: 25px;
 }

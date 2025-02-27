@@ -1,16 +1,16 @@
-// Header Fixed 
+// Header & Main Height Adjustmust
 
 const header = document.querySelector(".header");
+const main = document.querySelector(".main-section");
 
-if(header){
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 37) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
-}
+main.style.marginTop = `${header.offsetHeight}px`;
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 // Home Banner Slider
 
@@ -28,16 +28,28 @@ const homeBanner = new Swiper(".homeBanner", {
 // Stone Collection Slider
 
 const stoneCollections = new Swiper(".stoneCollections", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
         nextEl: ".stone-slider-btn.swiper-button-next",
         prevEl: ".stone-slider-btn.swiper-button-prev",
     },
-    // pagination: {
-    //   el: ".stoneCollections .swiper-pagination",
-    //   clickable: true,
-    // },
+    breakpoints: {
+        300: {
+          slidesPerView: 1,
+        //   spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 2,
+        //   spaceBetween: 20,
+        },
+        788: {
+          slidesPerView: 3,
+        },
+        1040: {
+          slidesPerView: 4,
+        },
+      },
 });
 
 // Popular Products Slider
@@ -49,17 +61,29 @@ const popularProducts = new Swiper(".popularProducts", {
         nextEl: ".products-slider-btn.swiper-button-next",
         prevEl: ".products-slider-btn.swiper-button-prev",
     },
-    // pagination: {
-    //   el: ".stoneCollections .swiper-pagination",
-    //   clickable: true,
-    // },
+    breakpoints: {
+        300: {
+          slidesPerView: 1,
+        //   spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 2,
+        //   spaceBetween: 20,
+        },
+        788: {
+          slidesPerView: 3,
+        },
+        1040: {
+          slidesPerView: 4,
+        },
+      },
 });
 
 // Blogs Slider
 
 const blogsSection = new Swiper(".homeBlogs", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".blogs-slider-btn.swiper-button-next",
         prevEl: ".blogs-slider-btn.swiper-button-prev",
@@ -68,6 +92,19 @@ const blogsSection = new Swiper(".homeBlogs", {
         el: ".blogs-section .blog-pagi",
         clickable: true,
     },
+    breakpoints: {
+        300: {
+          slidesPerView: 1,
+        //   spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 2,
+        //   spaceBetween: 20,
+        },
+        1040: {
+          slidesPerView: 3,
+        },
+      },
 });
 
 // Testimonial Slider
