@@ -47,6 +47,29 @@ h2.heading {
   top: 0;
   z-index: 99999;
 } */
+ /* Enable dropdown on hover */
+.header .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensure proper positioning */
+.header .dropdown-menu {
+  margin-top: 0;
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+/* Optional: Smooth transition */
+.header .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.header .nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
  .header .dropdown .dropdown-menu{
   background-color: #efebe3;
   border: none;
@@ -198,7 +221,7 @@ h2.heading {
 }
 .header .dropdown .dropdown-menu .dropdown-item{
   color: #5c5a57;
-
+  text-transform: capitalize;
 }
 .header.scrolled{
   padding-top: 0px;
@@ -770,26 +793,120 @@ h2.heading {
   width: 25px;
   height: 25px;
 }
-/* Enable dropdown on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+.breadcrumb{
+  padding: 20px 0 ;
+  margin: 0;
+}
+.breadcrumb .breadcrumb-item a, .breadcrumb .breadcrumb-item{
+  color: #615A52;
+}
+.breadcrumb .breadcrumb-item a:hover{
+  color: #000;
 }
 
-/* Ensure proper positioning */
-.dropdown-menu {
-  margin-top: 0;
+.page-des h1{
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.divider{
+  border-color: #807F7F;
+}
+
+.cat-section{
+  display: flex;
+  padding: 10px 10px;
+}
+
+.filter-bar{
+  padding: 0 5px;
+  width: 23%;
+}
+
+.filter-bar .wrapper{
+  background-color: #FBF8F4;
+  padding: 15px 20px;
+}
+.filter-bar .wrapper .fil-text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #615A52;
+  margin-bottom: 20px;
+}
+.filter-bar .single-filter{
+  background-color: #fff;
+  padding: 10px 15px;
+}
+.filter-bar .fil-name{
+  display: flex;
+  justify-content: space-between;
+}
+.filter-bar .fil-name span{
+  font-size: 15px;
+  color: #615A52;
+  font-weight: 500;
+}
+.filter-bar .price-input{
+  display: flex;
+  justify-content: space-between;
+}
+.filter-bar .price-input .field
+{
+  width: fit-content;
+  display: flex;
+  height: 27px;
+  align-items: center;
+}
+.filter-bar .seprator{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-bar .price-input .field input
+{
+  width: 80px;
+  margin-left: 5px;
+}
+.login-options .btn{
+  background-color: #efebe3;
+}
+.login-options .btn:hover{
+  background-color: #615a52;
+  color: #fff;
+}
+.login-options .btn.active{
+  background-color: #615a52;
+  color: #fff;
+}
+#login-modal .form .field label{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #6e675f;
+  font-weight: 500;
+}
+#login-modal .form .field input{
+  margin-bottom: 5px;
+  color: #6e675f;
+  padding: 5px 10px;
   border-radius: 5px;
-  min-width: 200px;
+  width: 100%;
+  border: 1px solid #4b4b4b75;
 }
-
-/* Optional: Smooth transition */
-.dropdown-menu {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+#login-modal .forgot:hover{
+  text-decoration: underline;
 }
-
-.nav-item.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
+#login-modal .login-modal-btn{
+  background-color: #efebe3;
+  border: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+#login-modal .login-modal-btn:hover{
+  background-color: #615a52;
+  color: #fff;
 }

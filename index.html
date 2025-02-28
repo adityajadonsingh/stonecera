@@ -162,7 +162,7 @@
                                         Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Register &
+                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#login-modal" href="#">Register &
                                         Login</a>
                                 </li>
                                 <!-- <li class="nav-item">
@@ -334,27 +334,6 @@
                                                     loading="lazy" alt>
                                                 <span
                                                     class="card-title">sandstone Paving</span>
-                                            </div>
-                                            <div class="view">
-                                                <span
-                                                    class="d-block text-center">View
-                                                    Collection</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="#">
-                                        <div class="wrapper">
-                                            <div class="img-box">
-                                                <img
-                                                    src="https://img.freepik.com/free-photo/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge_105762-2015.jpg?t=st=1740380254~exp=1740383854~hmac=5a8858bdac0e3a780a7c98852fb5461e10921e06fe8a4c0d6321373ed866c897&w=1060"
-                                                    class="img-fluid"
-                                                    loading="lazy" alt>
-                                                <span
-                                                    class="card-title">Wall Cladding</span>
                                             </div>
                                             <div class="view">
                                                 <span
@@ -1189,6 +1168,49 @@
                 </a>
             </div>
         </div>
+        <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <ul class="login-options">
+                    <li>
+                        <button class="btn active">Login</button>
+                        <button class="btn">Register</button>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form">
+                    <div class="field mb-3">
+                        <label for="Email" class="d-block">Username or Email</label>
+                        <input type="email" placeholder="Enter Your Username/Email">
+                    </div>
+                    <div class="field">
+                        <label for="Password" class="d-block">Password</label>
+                        <input type="password" placeholder="Enter Your Password">
+                    </div>
+                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                        <button class="login-modal-btn">Login</button>
+                        <a href="#" class="forgot">Forgot password?</a>
+                    </div>
+                  </div>
+                  <div class="form d-none">
+                    <div class="field mb-3">
+                        <label for="Email" class="d-block">Email</label>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="field">
+                        <label for="Password" class="d-block">Password</label>
+                        <input type="password" placeholder="Enter Your Password">
+                    </div>
+                    <button class="login-modal-btn">Login</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>          
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
