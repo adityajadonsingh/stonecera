@@ -11,8 +11,13 @@
   .products .card .img-box {
     height: 246px;
   }
+  .about-section .img-box {
+    height: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1220px) {
+
   .footer .container{
     max-width: 100%;
   }
@@ -114,6 +119,29 @@
     display: block;
   } */
 }
+@media (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+    display: none;
+    background-color: #f5f2eb;
+    width: auto;
+  }
+
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+    display: none;
+    width: 100%; /* Keep it natural */
+  }
+
+  .navbar-nav .dropdown.show .dropdown-menu {
+    display: block;
+  }
+}
 
 @media screen and (min-width: 767px) {
 
@@ -141,6 +169,12 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .header .dropdown .dropdown-menu .dropdown-item{
+    text-align: center;
+  }
+  .header .dropdown .dropdown-menu{
+    background-color: #fff;
+  }
   .footer .copywrite{
     white-space: normal;
     flex-wrap: wrap;
@@ -218,6 +252,12 @@
   .blogs-slider-btn.swiper-button-prev,
   .swiper-button-prev.testi-slider-btn {
     left: 20px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .testimonials {
+    padding: 30px 0;
   }
 }
 @media screen and (max-width: 480px) {

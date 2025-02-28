@@ -47,6 +47,11 @@ h2.heading {
   top: 0;
   z-index: 99999;
 } */
+ .header .dropdown .dropdown-menu{
+  background-color: #efebe3;
+  border: none;
+  border-radius: 3px;
+ }
 .header.scrolled{
   top: -36px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -191,6 +196,10 @@ h2.heading {
 .header .btm-bar .navbar-nav .nav-link {
   padding: 0;
 }
+.header .dropdown .dropdown-menu .dropdown-item{
+  color: #5c5a57;
+
+}
 .header.scrolled{
   padding-top: 0px;
 }
@@ -325,6 +334,7 @@ h2.heading {
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
 }
 .stone-collection .card .view {
   background-color: #615a52;
@@ -459,7 +469,7 @@ h2.heading {
   margin: 25px 0;
 }
 .about-section .img-box {
-  height: 100%;
+  height: 400px;
   width: 100%;
 }
 .about-section .img-box img{
