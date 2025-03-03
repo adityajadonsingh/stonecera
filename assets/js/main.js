@@ -157,10 +157,6 @@ const testimonial = new Swiper(".testimonial", {
         nextEl: ".testi-slider-btn.swiper-button-next",
         prevEl: ".testi-slider-btn.swiper-button-prev",
     },
-    pagination: {
-        el: ".blogs-section .blog-pagi",
-        clickable: true,
-    },
     breakpoints: {
       300: {
         slidesPerView: 1,

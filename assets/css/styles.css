@@ -409,18 +409,45 @@ h2.heading {
   padding: 10px;
   border-radius: 10px;
   background-color: #f3f3f3b0;
+  min-height: 500px;
+  width: 100%;
+}
+.products .card a {
+  height: 100%;
+  width: 100%;
+}
+.products .card .wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.products .card .wrapper .content-box{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products .swiper-slide{
+  display: flex;
+  height: 100%;
 }
 .products .card .img-box {
-  height: 296px;
+  height: 300px;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
   overflow: hidden;
 }
+.products .card .content-box{
+  height: calc(100% - 315px);
+}
 .products .card .img-box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.products .card:hover .img-box img {
+  transform: scale(1.04);
 }
 .products .content-box h3 {
   color: #615a52;
@@ -460,6 +487,10 @@ h2.heading {
   background-color: #f4f2ed;
   border: none;
   border-radius: 10px;
+}
+.deck .card:hover {
+  transform: translate3d(0, -2px, 0);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .deck .card img {
   width: 50px;
@@ -556,6 +587,10 @@ h2.heading {
   background-color: #ffffff47;
   backdrop-filter: blur(5px);
   color: #fff;
+}
+.newsletter .input-fields button:hover{
+  background-color: #fff;
+  color: #615A52;
 }
 .blogs-section {
   padding: 40px 0;
@@ -674,6 +709,9 @@ h2.heading {
   font-size: 15px;
   margin-bottom: 20px;
 }
+.footer .widget .items .item a:hover {
+  color: #000;
+}
 .footer .widget .social-icons {
   margin-top: 20px;
   display: flex;
@@ -689,6 +727,9 @@ h2.heading {
   align-items: center;
   color: #fff;
   font-size: 18px;
+}
+.footer .widget .social-icons .icn:hover{
+  background-color: #514b44;
 }
 .footer .widget.contact .item {
   display: flex;
@@ -717,6 +758,9 @@ h2.heading {
   display: flex;
   column-gap: 25px;
   color: #615a52;
+}
+.footer .copywrite a:hover{
+  color: #000;
 }
 .footer .payments-foot {
   display: flex;
@@ -751,6 +795,10 @@ h2.heading {
 .footer .footer-newsletter .input-fields button {
   background-color: #615a52;
   color: #fff;
+}
+.footer-newsletter .input-fields button:hover{
+  background-color: #fff;
+  color: #615A52;
 }
 .mobile-footer{
   position: fixed;
@@ -1013,6 +1061,8 @@ h2.heading {
   color: #91805E;
   font-size: 25px;
   font-weight: 600;
+  width: calc(100% - 30px);
+  padding-right: 5px;
 }
 .all-cat .card .content-box p{
   color: #615A52;
