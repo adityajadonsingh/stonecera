@@ -1,3 +1,43 @@
+// Filter Range Slider
+
+const rangeInput = document.querySelectorAll(".filter-bar .pricing .range-input input");
+rangeInput.forEach((input)=>{
+  input.addEventListener("input", ()=>{
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value);
+    console.log(minVal, maxVal)
+  })
+})
+
+// Login & Register Form
+
+const loginBtn = document.querySelector("#login-modal .login-options .log-btn");
+const regBtn = document.querySelector("#login-modal .login-options .reg-btn");
+const loginForm = document.querySelector("#login-modal .form.login-cerd");
+const regForm = document.querySelector("#login-modal .form.reg-cerd");
+
+if(loginBtn){
+  loginBtn.addEventListener("click", () => {
+    if(loginForm.classList.contains("d-none")){
+      loginForm.classList.remove("d-none");
+      regForm.classList.add("d-none");
+      loginBtn.classList.toggle("active");
+      regBtn.classList.toggle("active");
+    }
+  })
+}
+if(regBtn){
+  regBtn.addEventListener("click", () => {
+    if(regForm.classList.contains("d-none")){
+      regForm.classList.remove("d-none");
+      loginForm.classList.add("d-none");
+      loginBtn.classList.toggle("active");
+      regBtn.classList.toggle("active");
+    }
+  })
+}
+
+
 // Header & Main Height Adjustmust
 
 const header = document.querySelector(".header");

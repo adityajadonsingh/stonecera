@@ -1174,14 +1174,14 @@
                 <div class="modal-header">
                   <ul class="login-options">
                     <li>
-                        <button class="btn active">Login</button>
-                        <button class="btn">Register</button>
+                        <button class="btn log-btn active">Login</button>
+                        <button class="btn reg-btn">Register</button>
                     </li>
                   </ul>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <div class="form">
+                  <form class="form login-cerd">
                     <div class="field mb-3">
                         <label for="Email" class="d-block">Username or Email</label>
                         <input type="email" placeholder="Enter Your Username/Email">
@@ -1194,18 +1194,22 @@
                         <button class="login-modal-btn">Login</button>
                         <a href="#" class="forgot">Forgot password?</a>
                     </div>
-                  </div>
-                  <div class="form d-none">
+                  </form>
+                  <form class="form reg-cerd d-none">
                     <div class="field mb-3">
-                        <label for="Email" class="d-block">Email</label>
+                        <label for="username" class="d-block">Username</label>
+                        <input type="text" placeholder="Choose Your Username">
+                    </div>
+                    <div class="field mb-3">
+                        <label for="email" class="d-block">Email</label>
                         <input type="email" placeholder="Enter Your Email">
                     </div>
                     <div class="field">
                         <label for="Password" class="d-block">Password</label>
                         <input type="password" placeholder="Enter Your Password">
                     </div>
-                    <button class="login-modal-btn">Login</button>
-                  </div>
+                    <button class="login-modal-btn mt-3">Register</button>
+                  </form>
                 </div>
                 
               </div>

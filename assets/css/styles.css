@@ -793,6 +793,47 @@ h2.heading {
   width: 25px;
   height: 25px;
 }
+.login-options .btn{
+  background-color: #efebe3;
+}
+.login-options .btn:hover{
+  background-color: #615a52;
+  color: #fff;
+}
+.login-options .btn.active{
+  background-color: #615a52;
+  color: #fff;
+}
+#login-modal .form .field label{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #6e675f;
+  font-weight: 500;
+}
+#login-modal .form .field input{
+  margin-bottom: 5px;
+  color: #6e675f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #4b4b4b75;
+}
+#login-modal .forgot:hover{
+  text-decoration: underline;
+}
+#login-modal .login-modal-btn{
+  background-color: #efebe3;
+  border: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+#login-modal .login-modal-btn:hover{
+  background-color: #615a52;
+  color: #fff;
+}
 .breadcrumb{
   padding: 20px 0 ;
   margin: 0;
@@ -864,49 +905,134 @@ h2.heading {
   justify-content: center;
   align-items: center;
 }
+.filter-bar .price-input .field span{
+  color: #6f6f6f;
+  font-size: 14px;
+}
 .filter-bar .price-input .field input
 {
   width: 80px;
   margin-left: 5px;
+  border: 1px solid #8a8a8a;
+  border-radius: 2px;
+  padding: 2px 5px;
+  color: #505050;
+  -moz-appearance: none;
 }
-.login-options .btn{
-  background-color: #efebe3;
+.filter-bar .price-input .field input[type="number"]::-webkit-outer-spin-button,
+.filter-bar .price-input .field input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
 }
-.login-options .btn:hover{
-  background-color: #615a52;
-  color: #fff;
-}
-.login-options .btn.active{
-  background-color: #615a52;
-  color: #fff;
-}
-#login-modal .form .field label{
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #6e675f;
-  font-weight: 500;
-}
-#login-modal .form .field input{
-  margin-bottom: 5px;
-  color: #6e675f;
-  padding: 5px 10px;
+
+.filter-bar .pricing .slider{
+  height: 5px;
   border-radius: 5px;
+  background-color: #ddd;
+  position: relative;
+}
+.filter-bar .pricing .slider .progress{
+  height: 5px;
+  background-color: #7b6e52;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+.filter-bar .pricing .range-input{
+  position: relative;
+}
+.filter-bar .pricing .range-input input{
+  position: absolute;
+  top: -5px;
+  height: 5px;
   width: 100%;
-  border: 1px solid #4b4b4b75;
+  background: none;
+  -webkit-appearance: none;
 }
-#login-modal .forgot:hover{
-  text-decoration: underline;
-}
-#login-modal .login-modal-btn{
-  background-color: #efebe3;
+.filter-bar .pricing .range-input input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  pointer-events: auto;
+  background: #7b6e52;
   border: none;
-  padding: 5px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  font-weight: 500;
-  color: #4d4d4d;
 }
-#login-modal .login-modal-btn:hover{
-  background-color: #615a52;
+
+.filter-bar .pricing .range-input input[type="range"]::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  pointer-events: auto;
+  background: #7b6e52;
+  border: none;
+}
+
+.all-cat{
+  padding: 20px 0;
+}
+
+.all-cat .card{
+  border: none;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  height: 100%;
+}
+.all-cat .card a, .all-cat .card .wrapper{
+  height: 100%;
+}
+.all-cat .card .img-box{
+  width: 100%;
+  height: 100%;
+}
+.all-cat .card .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.all-cat .card:hover .img-box img{
+  transform: scale(1.04);
+}
+
+.all-cat .card .content-box{
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  background-color: #ffffffbf;
+  width: 90%;
+  transform: translateX(-50%);
+  padding: 12px 15px;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+}
+.all-cat .card .content-box .title-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.all-cat .card .content-box .title-box h2{
+  color: #91805E;
+  font-size: 25px;
+  font-weight: 600;
+}
+.all-cat .card .content-box .title-box .icn{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #91805E;
   color: #fff;
+}
+.all-cat .card:hover .content-box{
+  background-color: #fff;
+}
+.all-cat .card:hover .content-box .icn i{
+  transform: rotateZ(44deg);
+}
+.all-cat .card-heigth-square .card{
+  height: 400px;
+}
+.all-cat .card-heigth-wide .card{
+  height: 350px;
 }
