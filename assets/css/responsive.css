@@ -17,7 +17,9 @@
   }
 }
 @media screen and (max-width: 1220px) {
-
+  .all-cat .card-heigth-wide .card {
+    height: 300px;
+  }
   .footer .container{
     max-width: 100%;
   }
@@ -51,6 +53,10 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .all-cat .card-heigth-big .card, .all-cat .card-heigth-square .card,.all-cat .card-heigth-wide .card,
+  .all-cat .card-heigth-btm .card {
+    height: 300px;
+  }
   .footer{
     padding-bottom: 10px;
   }
