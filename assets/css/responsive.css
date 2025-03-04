@@ -8,9 +8,9 @@
   }
 }
 @media screen and (max-width: 1380px) {
-  .products .card {
+  /* .products .card {
     min-height: 450px;
-  }
+  } */
   .products .card .img-box {
     height: 246px;
   }
@@ -231,9 +231,9 @@
   }
 }
 @media screen and (max-width: 620px) {
-  .products .card {
+  /* .products .card {
     min-height: 400px;
-  }
+  } */
   .deck .card h4 {
     font-size: 14px;
   }
@@ -291,9 +291,9 @@
   .products .content-box .pricing .price {
     font-size: 16px;
   }
-  .products .card .img-box {
+  /* .products .card .img-box {
     height: 236px;
-  }
+  } */
 }
 @media screen and (max-width: 420px) {
   .footer .payments-foot {
