@@ -234,6 +234,9 @@
   /* .products .card {
     min-height: 400px;
   } */
+  .blogs .left-side .blog .blog-text .blog-btn{
+    font-size: 15px;
+  }
   .deck .card h4 {
     font-size: 14px;
   }

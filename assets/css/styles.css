@@ -1056,7 +1056,7 @@ h2.heading {
 .all-cat .card .content-box .title-box{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .all-cat .card .content-box .title-box h2{
   color: #91805E;
@@ -1148,6 +1148,7 @@ h2.heading {
 }
 .blogs .left-side .blog .blog-text p{
   color: #5A5C5D;
+  margin-bottom: 10px;
 }
 .blogs .left-side .blog .blog-text .blog-btn{
   color: #C69B44;
