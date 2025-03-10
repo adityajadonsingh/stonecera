@@ -1,14 +1,3 @@
-// Filter Range Slider
-
-const rangeInput = document.querySelectorAll(".filter-bar .pricing .range-input input");
-rangeInput.forEach((input)=>{
-  input.addEventListener("input", ()=>{
-    let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value);
-    console.log(minVal, maxVal)
-  })
-})
-
 // Login & Register Form
 
 const loginBtn = document.querySelector("#login-modal .login-options .log-btn");
@@ -16,7 +5,7 @@ const regBtn = document.querySelector("#login-modal .login-options .reg-btn");
 const loginForm = document.querySelector("#login-modal .form.login-cerd");
 const regForm = document.querySelector("#login-modal .form.reg-cerd");
 
-if(loginBtn){
+if(loginBtn && regBtn && loginForm && regForm){
   loginBtn.addEventListener("click", () => {
     if(loginForm.classList.contains("d-none")){
       loginForm.classList.remove("d-none");
@@ -25,8 +14,6 @@ if(loginBtn){
       regBtn.classList.toggle("active");
     }
   })
-}
-if(regBtn){
   regBtn.addEventListener("click", () => {
     if(regForm.classList.contains("d-none")){
       regForm.classList.remove("d-none");
@@ -157,6 +144,10 @@ const testimonial = new Swiper(".testimonial", {
         nextEl: ".testi-slider-btn.swiper-button-next",
         prevEl: ".testi-slider-btn.swiper-button-prev",
     },
+    pagination: {
+        el: ".blogs-section .blog-pagi",
+        clickable: true,
+    },
     breakpoints: {
       300: {
         slidesPerView: 1,
@@ -174,4 +165,39 @@ const testimonial = new Swiper(".testimonial", {
         slidesPerView: 3,
       },
     },
+});
+
+// Single Product Review Slider
+
+const singleProdReview = new Swiper(".prodReview", {
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    speed: 800,
+    navigation: {
+        nextEl: ".product-reviews .nav-btns-slider .next-slide",
+        prevEl: ".product-reviews .nav-btns-slider .prev-slide",
+    },
+    // pagination: {
+    //     el: ".blogs-section .blog-pagi",
+    //     clickable: true,
+    // },
+    // breakpoints: {
+    //   300: {
+    //     slidesPerView: 1,
+    //   //   spaceBetween: 20,
+    //   },
+    //   767: {
+    //     slidesPerView: 1,
+    //   //   spaceBetween: 20,
+    //   },
+    //   991: {
+    //     slidesPerView: 2,
+    //   //   spaceBetween: 20,
+    //   },
+    //   1040: {
+    //     slidesPerView: 3,
+    //   },
+    // },
 });
