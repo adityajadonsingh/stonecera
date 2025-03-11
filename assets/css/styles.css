@@ -1570,3 +1570,40 @@ h2.heading {
   background-color: #7F7051;
   color: #fff;
 }
+.sort-by{
+  margin: 30px 0 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  color: #615A52;
+}
+.sort-by .text{
+  padding-bottom: 10px;
+}
+.sort-by .text span{
+  white-space: nowrap;
+}
+.sort-by .sort-items{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.sort-by .sort-items .content{
+  padding: 5px 20px;
+  background-color: #E6E2DD;
+  color: #615A52;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sort-by .sort-items .content:hover{
+  background-color: #615A52;
+  color: #fff;
+}
+.all-products .card{
+  background-color: #FBF8F4;
+  border: 1px solid #CBBA99;
+}

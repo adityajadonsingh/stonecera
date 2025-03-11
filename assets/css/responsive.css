@@ -428,6 +428,9 @@
     .single-blog .blog-heading {
       font-size: 24px;
     }
+    .single-blog .publish-details{
+      font-size: 13px;
+    }
     .single-blog .blog-functions .blog-nav-btn {
       font-size: 13px;
       width: 110px;
