@@ -527,6 +527,9 @@
   }
 }
 @media screen and (max-width: 380px) {
+  .all-products.products .content-box h3 {
+    font-size: 15px;
+  }
   .all-products.products .content-box .pricing .price {
     font-size: 10px;
   }
