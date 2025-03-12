@@ -1607,3 +1607,8 @@ h2.heading {
   background-color: #FBF8F4;
   border: 1px solid #CBBA99;
 }
+.contact-top .container-cus{
+  max-width: 100%;
+  padding: 0;
+  padding-left: 70px;
+}

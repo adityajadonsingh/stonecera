@@ -39,6 +39,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Header mobile nav toggler
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggler = document.querySelector(".mob-nav-btn");
+  const navbarCollapse = document.querySelector("#navbarNav");
+
+  document.addEventListener("click", function (event) {
+    const isClickInsideNavbar = navbarCollapse.contains(event.target);
+    const isClickOnToggler = navbarToggler.contains(event.target);
+
+    if (!isClickInsideNavbar && !isClickOnToggler) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false,
+      });
+      bsCollapse.hide();
+    }
+  });
+});
+
+
 // Home Banner Slider
 
 const homeBanner = new Swiper(".homeBanner", {
