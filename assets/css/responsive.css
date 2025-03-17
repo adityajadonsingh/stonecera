@@ -77,6 +77,22 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .contact-top .page-des{
+    padding: 0;
+  }
+  .cont-info{
+    width: 100%;
+  }
+  .cont-info .card{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .cont-info .card .info{
+    width: fit-content;
+    margin-top: 15px;
+    text-align: center;
+  }
   .single-blog .blog-comment-section {
     margin-bottom: 20px;
   }
@@ -427,6 +443,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
   .all-products.products .content-box .pricing .price {
     font-size: 12px;
   }
