@@ -1708,7 +1708,6 @@ h2.heading {
 .about-us-page h1 {
   font-size: 40px;
   font-weight: 600;
-  padding: 20px 0 0;
 }
 .about-us-page .img-box {
   width: 100%;
@@ -1756,6 +1755,7 @@ h2.heading {
   width: auto;
   height: 190px;
   margin-top: 15px;
+    object-fit: cover;
 }
 .more-details .img-box img {
   width: 100%;
@@ -1929,4 +1929,26 @@ div#comments {
 .advantages .card p{
   font-size: 15px;
   color: #6d665f;
+}
+.about-pag{
+  padding: 30px 0 40px;
+}
+.about-pag .cont-info .card {
+  padding: 10px 10px;
+  min-height: 75px;
+}
+.about-pag .contact-form textarea {
+  height: 120px;
+}
+.about-pag .cont-info .card .icn {
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+}
+.about-pag .cont-info .card .info {
+  width: calc(100% - 64px);
+}
+.about-pag h2{
+  margin-bottom: 15px;
+  font-size: 28px;
 }

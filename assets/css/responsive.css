@@ -77,6 +77,15 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .about-pag .page-des{
+    text-align: center;
+  }
+  .more-details .content{
+    padding: 20px 0 0 0;
+  }
+  .about-us-page .about-text{
+    margin-bottom: 20px;
+  }
   .contact-top .page-des{
     padding: 0;
   }
@@ -264,6 +273,25 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .advantages .section-title p{
+    padding: 0;
+  }
+  .about-pag {
+    padding: 0px 0 40px;
+  }
+  .advantages .card{
+    margin-bottom: 20px;
+  }
+  .about-us-page .about-text .heading, .more-details .content h3 {
+    margin: 0px 0 10px;
+    font-size: 24px;
+  }
+  .about-us-page h1 {
+    font-size: 35px;
+  }
+  .about-us-page .img-box-main .sm-img img {
+    height: 160px;
+  }
   .single-blog .img-box {
     height: 350px;
   }
@@ -369,6 +397,12 @@
   }
 }
 @media screen and (max-width: 620px) {
+  .about-us-page .img-box-main .row{
+    margin: 0;
+  }
+  .about-us-page .img-box-main .row .col-8, .about-us-page .img-box-main .row .col-4,   .about-us-page .img-box-main .row .col-7, .about-us-page .img-box-main .row .col-5{
+    padding: 5px;
+  }
   .all-products.products .card .img-box {
     height: 196px;
   }
@@ -530,6 +564,9 @@
     } */
 }
 @media screen and (max-width: 420px) {
+  .more-details .img-box-main .img-cont .img-md{
+    height: 160px;
+  }
   .footer .payments-foot {
     width: 100%;
     column-gap: 0;
