@@ -1,3 +1,23 @@
+// Product Gallery 
+
+var productThumbGallery = new Swiper(".thumbGallery", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var productMainGallery = new Swiper(".mainGallery", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: productThumbGallery,
+  },
+});
+
+console.log(productMainGallery)
 // Login & Register Form
 
 const loginBtn = document.querySelector("#login-modal .login-options .log-btn");

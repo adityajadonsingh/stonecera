@@ -77,27 +77,30 @@
   }
 }
 @media screen and (max-width: 991px) {
-  .about-pag .page-des{
+  .about-pag .page-des {
     text-align: center;
   }
-  .more-details .content{
-    padding: 20px 0 0 0;
-  }
-  .about-us-page .about-text{
-    margin-bottom: 20px;
-  }
-  .contact-top .page-des{
+  .more-details .content {
     padding: 0;
   }
-  .cont-info{
+  .more-details .img-box-main {
+    padding: 20px 0 0 0;
+  }
+  .about-us-page .about-text {
+    margin-bottom: 20px;
+  }
+  .contact-top .page-des {
+    padding: 0;
+  }
+  .cont-info {
     width: 100%;
   }
-  .cont-info .card{
+  .cont-info .card {
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
-  .cont-info .card .info{
+  .cont-info .card .info {
     width: fit-content;
     margin-top: 15px;
     text-align: center;
@@ -273,16 +276,104 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .advantages .section-title p{
+  .cat-filter .filter-opt .filter-text{
+    margin: 0;
+  }
+  .cat-filter .filter-list{
+    overflow-y: auto;
+  height: 100vh;
+  }
+  .cat-filter .fil-top{
+    margin-bottom: 15px;
+  }
+  .cat-filter .fil-top i{
+    display: block;
+  }
+  .cat-filter{
+    padding: 0;
+  }
+  .cat-filter .filter-btn{
+    display: block;
+  }
+  .cat-filter .top-optns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .cat-filter .top-optns .sort-by{
+    position: relative;
+    margin: 0;
+  }
+  .cat-filter .top-optns .sort-by .sort-items{
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -92px;
+    background-color: #fff;
+    z-index: 11;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    display: none;
+  }
+  .cat-filter .top-optns .sort-by:hover .sort-items{
+    display: flex;
+  }
+  .cat-filter .top-optns .sort-by .sort-items .item{
+    padding: 6px 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .cat-filter .top-optns .sort-by .sort-items .item:hover{
+    background-color: #ededed;
+  }
+  .cat-filter .top-optns .sort-by .sort-items .content{
+    background-color: transparent;
+    color: #615a52 !important;
+    padding: 0;
+    border-radius: 0;
+
+  }
+  .cat-filter .top-optns .sort-by .text{
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: none;
+    background-color: #ce9552;
+    color: #fff;
+    cursor: pointer;
+  }
+  .filter-opt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transform: translateX(-100%);
+    width: 55%;
+  }
+  .filter-opt.open {
+    transform: translateX(0%);
+  }
+  .wishlist-count-mobile,
+  .cart-count {
+    top: -8px;
+    right: -13px;
+  }
+  .cart-count {
+    top: -8px;
+    right: -16px;
+  }
+  .advantages .section-title p {
     padding: 0;
   }
   .about-pag {
     padding: 0px 0 40px;
   }
-  .advantages .card{
+  .advantages .card {
     margin-bottom: 20px;
   }
-  .about-us-page .about-text .heading, .more-details .content h3 {
+  .about-us-page .about-text .heading,
+  .more-details .content h3 {
     margin: 0px 0 10px;
     font-size: 24px;
   }
@@ -397,10 +488,16 @@
   }
 }
 @media screen and (max-width: 620px) {
-  .about-us-page .img-box-main .row{
+  .filter-opt {
+    width: 100%;
+  }
+  .about-us-page .img-box-main .row {
     margin: 0;
   }
-  .about-us-page .img-box-main .row .col-8, .about-us-page .img-box-main .row .col-4,   .about-us-page .img-box-main .row .col-7, .about-us-page .img-box-main .row .col-5{
+  .about-us-page .img-box-main .row .col-8,
+  .about-us-page .img-box-main .row .col-4,
+  .about-us-page .img-box-main .row .col-7,
+  .about-us-page .img-box-main .row .col-5 {
     padding: 5px;
   }
   .all-products.products .card .img-box {
@@ -480,8 +577,8 @@
   .contact-form {
     padding: 20px;
   }
-  .all-products.products .content-box .pricing .price {
-    font-size: 12px;
+  .all-products.products .content-box .pricing .price, .products .content-box .pricing span {
+    font-size: 11px;
   }
   .all-products.products .card {
     padding: 6px;
@@ -551,7 +648,7 @@
     font-size: 25px;
   }
   .products .content-box h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .products .content-box p {
     font-size: 15px;
@@ -564,7 +661,7 @@
     } */
 }
 @media screen and (max-width: 420px) {
-  .more-details .img-box-main .img-cont .img-md{
+  .more-details .img-box-main .img-cont .img-md {
     height: 160px;
   }
   .footer .payments-foot {
@@ -589,5 +686,7 @@
   .all-products.products .content-box .pricing .price {
     font-size: 10px;
   }
-  
+  .custom-pagination .page-numbers.next, .custom-pagination .page-numbers.prev{
+    padding: 0 10px;
+  }
 }
